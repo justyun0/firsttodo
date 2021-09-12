@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func didTabAdd(){
         //show add ViewController
+
     }
     
     @IBAction func didTabTest(){
@@ -36,8 +37,20 @@ class ViewController: UIViewController {
             }
         })
     }
+    
     func scheduleTest() {
-        
+        let content = UNMutableNotificationContent()
+        content.title = "Hello World"
+        content.sound = .default
+        content.body = "My longlonglong body My longlonglong body My longlonglong body My longlonglong body"
+        let targetDate = Date().addingTimeInterval(10)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: targetDate), repeats: false)
+        let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
+            if error != nil {
+                print("something went wrong")
+            }
+        })
     }
 
 }

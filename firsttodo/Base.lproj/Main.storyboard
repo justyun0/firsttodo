@@ -43,7 +43,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="table" destination="xEt-8d-Gto" id="bsP-hN-M3J"/>
+                        <outlet property="table" destination="xEt-8d-Gto" id="sOO-TN-TCr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
