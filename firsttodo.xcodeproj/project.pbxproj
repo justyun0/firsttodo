@@ -46,6 +46,7 @@
 				A65BF78926EDF8FC00BE354B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		A65BF78926EDF8FC00BE354B /* Products */ = {
 			isa = PBXGroup;
